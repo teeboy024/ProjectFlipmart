@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- META TAGS  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta propert="og:title" content="e-commerce site">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#">
+    <meta property="og:description" content="Purchase your fresh veggies and stylish threads">
+    <meta property="og:site name" content="Flipmart">
+
+    <title>Flipmart</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- CSS links  -->
+    <link rel="stylesheet" href="flipmart.css">
+    <link rel="stylesheet" href="Media query.css">
+    <link rel="stylesheet" href="product tags_styling.css">
+</head>
+<body>
+    <!--================================== HEADER START ======================================-->
+   <div class="heading">
+      <div class="container-md">
+         <nav class="d-flex" id="list2">
+            <div class="select-box1" style="text-align: center;">
+               <select class="select1 ">
+                  <option value="Choice 1">$USD</option>
+                  <option value="Choice 1">₤EUR</option>
+                  <option value="Choice 2">₦NRA</option>
+                  <option value="Choice 3">₾CND</option>
+               </select>
+               <select  class="select1">
+                  <option value="Choice 1">English</option>
+                  <option value="Choice 1">French</option>
+                  <option value="Choice 2">Spanish</option>
+                  <option value="Choice 3">Arabic</option>
+               </select>
+               <select  class="select1">
+                  <option value="Choice 1">My Account</option>
+                  <option value="Choice 1">Gmail account</option>
+                  <option value="Choice 2">Yahoo account</option>
+               </select>
+           </div>
+           <div class="cnt-account d-sm-flex">
+            <ul class="list-unstyled" id="list3">
+              <li><a href="#" style="margin-left: 8px;"><i class="icon fa fa-heart"></i>Wishlist</a></li>
+              <div class="vr"></div>
+              <li><a href="#" style="margin-left: 8px;"><i class="icon fa fa-shopping-cart" ></i>My Cart</a></li>
+              <div class="vr"></div>
+              <li class="text1" style="margin-left: -8px;"><a href="#"><i class="icon fa fa-check"></i>Checkout</a></li>
+              <div class="vr"></div>
+              <li><a href="#" style="margin-left: 8px;"></i>Login</a></li>
+              <div class="vr"></div>
+            </ul>
+          </div>
+         </nav>
+         
+
+         <div class="d-sm-flex" id="second_line">
+            <div class="logo_container">
+               <a href="index.html"><img src="images/logo.png" class="img-fluid"  id="logo" alt=""></a>
+            </div>
+
+<!-- ============================================================= SEARCH AREA ============================================================= -->
+            <div class="d-sm-flex" id="search4">
+               <div class="btn-group" id="bug1">
+                  <button class="btn btn-light btn-sm dropdown-toggle" id="categories" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                  </button>
+                  <ul class="dropdown-menu" id="drop_down1">
+                     <li><a href="" class="drop_list">- Computer</a></li>
+                     <li><a href="" class="drop_list">- Clothing</a></li>
+                     <li><a href="" class="drop_list">- Electronics</a></li>
+                     <li><a href="" class="drop_list">- Shoes</a></li>
+                     <li><a href="" class="drop_list">- Watches</a></li>
+                  </ul>
+               </div>
+               <div class="search1">
+                  <input type="text" name="" id="" placeholder="Search here..." class="search">
+               </div>
+               <div class="search_container">
+                  <button type="button" class="btn btn-md"><a href=""><img src="icons/search_icon.JPG" alt=""></a> </button>
+               </div>
+            </div>
+<!-- ============================================================= SEARCH AREA : END ====================================================== -->
+
+<!-- ============================================================= SHOPPING CART DROPDOWN ================================================= -->
+            <div class="d-flex" id="third_box">
+               <div class="box3">
+                  <a href=""><img src="icons/cart_icon.JPG" alt=""><span class="position-absolute  start-90 translate-middle badge rounded-pill bg-warning" style="color: gray;" id="badge1">
+                     2
+                     <span class="visually-hidden">unread messages</span>
+                 
+                  </a>
+               </div>
+               <div class="dropdown" id="drop_7">
+                  <a class="btn btn-secondary " id="third_box1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CART - $600.00
+                  </a>
+                
+                  <ul class="dropdown-menu">
+                   <div class="container">
+                     <div class="d-flex">
+                        <li><a class="dropdown-item" href="#"><img src="images/banners/banner-side.png" class="drop_img" alt=""></a></li>
+                        <li><a class="dropdown-item" href="#" class="pro">Simple Product</a><span class="pro_price"><b>$500.00</b></span></li>
+                       </div>
+                       <li><hr class="dropdown-divider"></li>
+                       <li><a class="dropdown-item" href="#" class="sub">Sub Total</a><span class="pro_price"><b>$500.00</b></span></a></li>
+                      <div class="check_button">
+                        <button class="btn text-white btn-primary" id="checkout"> CHECK OUT</button>
+                      </div>
+                   </div>
+                  </ul>
+               </div>
+            </div>
+         </div>
+<!-- ============================================================ SHOPPING CART DROPDOWN : END============================================= -->
+      </div>
+<!-- ============================================================ NAVBAR ================================================================== -->
+      <!-- <div class="mainnavbar">
+         <div class="container-md">
+            <div class="container text-center">
+               <div class="row">
+                 <div class="col">col</div>
+                 <div class="col">col</div>
+                 <div class="col">col</div>
+                 <div class="col">col</div>
+               </div>
+         </div>
+      </div> -->
+
+      <nav class="navbar navbar-expand-lg" id="mainnavbar">
+         <div class="container-sm">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" style="border: 0px; color: white;" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="margin-top: -5px;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <div class="list15" id="navHome" >
+                  <li class="nav-item" onmouseover="homeHover()" onmouseleave="normalHome()">
+                     <a class="nav-link active" id="set9" id="hometext" aria-current="page" onmouseover="homeHover()" onmouseleave="normalHome()" href="index.html"
+                      style=" font-family: sans-serif; font-size: 13px;">HOME</a>
+                  </li>
+               </div>
+              <div class="list16" id="navClothing">
+               <li class="nav-item" >
+                  <div class="dropdown">
+                     <a class="nav-link" id="set9" href="#" role="but" data-bs-toggle="dropdown"
+                      aria-expanded="false" style="font-size: 14px;" id="bug40" id="clothingText" onmouseover="clothingHover()" onmouseleave="normalClothing()">
+                       CLOTHING
+                     </a>
+                   
+                     <ul class="dropdown-menu" id="dropcont1">
+                      <div class="container-md" id="dropcont4">
+                        <div class="d-sm-flex" id="dropcont2" >
+                           <div>
+                              <ul class="drop_list2">
+                                 <h1 class="drop_list1"><b>Men</b></h1>
+                                 <li><a href="#">Dresses</a></li>
+                                 <li><a href="#">Shoes</a></li>3
+                                 <li><a href="#">Jackets</a></li>
+                                 <li><a href="#">Sunglasses</a></li>
+                                 <li><a href="#">Sportwears </a></li>
+                                 <li><a href="#">Blazers</a></li>
+                                 <li><a href="#">Shorts</a></li>
+                              </ul>
+                           </div>
+                           <div>
+                              <ul class="drop_list2">
+                                 <h1 class="drop_list1"><b>Women</b></h1>
+                                 <li><a href="#">Handbags</a></li>
+                                 <li><a href="#">Jewellery</a></li>
+                                 <li><a href="#">Swimwear</a></li>
+                                 <li><a href="#">Tops</a></li>
+                                 <li><a href="#">Flats</a></li>
+                                 <li><a href="#">Shoes</a></li>
+                                 <li><a href="#">Winter Wear</a></li>
+                              </ul>
+                           </div>
+                           <div>
+                              <ul class="drop_list2">
+                                 <h1 class="drop_list1"><b>Boys</b></h1>
+                                 <li><a href="#">Toys & Games</a></li>
+                                 <li><a href="#">Jeans</a></li>
+                                 <li><a href="#">Shorts</a></li>
+                                 <li><a href="#">Shoes</a></li>
+                                 <li><a href="#">School Bags</a></li>
+                                 <li><a href="#">Foot wear</a></li>
+                                 <li><a href="#">Lunch bags</a></li>
+                              </ul>
+                           </div>
+                           <div>
+                              <ul class="drop_list2">
+                                 <h1 class="drop_list1"><b>Girls</b></h1>
+                                 <li><a href="#">Sandals</a></li>
+                                 <li><a href="#">Shorts</a></li>
+                                 <li><a href="#">Dresses</a></li>
+                                 <li><a href="#">Jewellery</a></li>
+                                 <li><a href="#">Bags</a></li>
+                                 <li><a href="#"> Swim wear</a></li>
+                                 <li><a href="#">Night dress</a></li>
+                              </ul>
+                           </div>
+                           <div>
+                              <img src="images/banners/top-menu-banner.jpg" class="fet9" alt="">
+                           </div>
+                        </div>
+                          
+                      </div>
+                     </ul>
+                  </div>
+                 </li>
+              </div>
+
+
+              <div class="list16" id="navElectronics">
+               <li class="nav-item">
+                  <div class="dropdown">
+                     <a class="nav-link" id="set9" href="#" role="but" data-bs-toggle="dropdown"
+                      aria-expanded="false" style="font-size: 14px;" id="electronicsText" onmouseover="electronicsHover()" onmouseleave="normalElectronics()">
+                       ELECTRONICS
+                       <span  class="position-absolute top-0 start-10 translate-middle badge  bg-danger" >
+                        HOT
+                        <span class="visually-hidden">unread messages</span>
+                     </a>
+                   
+                     <ul class="dropdown-menu" id="dropcont6"  >
+                      <div class="container-md" id="dropcont5">
+                        <div class="d-sm-flex" id="dropcont7" >
+                           <div>
+                              <ul class="drop_list2">
+                                 <h1 class="drop_list1"><b>LAPTOPS</b></h1>
+                                 <li><a href="#">Gaming</a></li>
+                                 <li><a href="#">Apple</a></li>
+                                 <li><a href="#">Dell</a></li>
+                                 <li><a href="#">Lenovo</a></li>
+                                 <li><a href="#">Microsoft </a></li>
+                                 <li><a href="#">Asus</a></li>
+                                 <li><a href="#">Adapters</a></li>
+                                 <li><a href="#">Batteries</a></li>
+                                 <li><a href="#">Cooing Pads</a></li>
+                              </ul>
+                           </div>
+                           <div>
+                              <ul class="drop_list2">
+                                 <h1 class="drop_list1"><b>Desktops</b></h1>
+                                 <li><a href="#">Routers & modems</a></li>
+                                 <li><a href="#">CPUs, Processors</a></li>
+                                 <li><a href="#">PC Gaming store</a></li>
+                                 <li><a href="#">Components</a></li>
+                                 <li><a href="#">Webcam</a></li>
+                                 <li><a href="#">Memory (RAM)</a></li>
+                                 <li><a href="#">Motherboards</a></li>
+                                 <li><a href="#">Keyboards</a></li>
+                                 <li><a href="#">Haedphones</a></li>
+                              </ul>
+                           </div>
+                           <div>
+                              <ul class="drop_list2">
+                                 <h1 class="drop_list1"><b>Cameras</b></h1>
+                                 <li><a href="#">Accessories</a></li>
+                                 <li><a href="#">Binculars</a></li>
+                                 <li><a href="#">Telescopes</a></li>
+                                 <li><a href="#">Camcorders</a></li>
+                                 <li><a href="#">Digital</a></li>
+                                 <li><a href="#">Film Cameras</a></li>
+                                 <li><a href="#">Flashes</a></li>
+                                 <li><a href="#">Surveilance</a></li>
+                                 <li><a href="#">Tripods</a></li>
+                              </ul>
+                           </div>
+                           <div>
+                              <ul class="drop_list2">
+                                 <h1 class="drop_list1"><b>Phones</b></h1>
+                                 <li><a href="#">Apple</a></li>
+                                 <li><a href="#">Samsung</a></li>
+                                 <li><a href="#">Lenovo</a></li>
+                                 <li><a href="#">Motorola</a></li>
+                                 <li><a href="#">LeEco</a></li>
+                                 <li><a href="#"> Asus</a></li>
+                                 <li><a href="#">Acer</a></li>
+                                 <li><a href="#">Tecno</a></li>
+                                 <li><a href="#">Infinix</a></li>
+                              </ul>
+                           </div>
+                           <div>
+                              <img src="images/banners/banner-side.png" class="fet8" alt="">
+                           </div>
+                        </div>
+                      </div>
+                     </ul>
+                  </div>
+                 </li>
+                 
+              </div>
+              <div class="list16" id="navHealth">
+               <li class="nav-item">
+                  <a class="nav-link active" id="set9" aria-current="page" href="#"
+                   style=" font-family: sans-serif; font-size: 13px;" id="healthText" onmouseover="healthHover()" onmouseleave="normalHealth()">
+                   HEALTH & BEAUTY
+                   <span class="position-absolute top-0 start-10 translate-middle badge  bg-warning">
+                     NEW
+                     <span class="visually-hidden">unread messages</span>
+                   </a>
+               </li>
+               </div>  
+               <div class="list16" id="navWatches">
+                  <li class="nav-item">
+                     <a class="nav-link active" id="set9" aria-current="page" href="#"
+                      style=" font-family: sans-serif; font-size: 13px;" id="watchesText" onmouseover="watchesHover()" onmouseleave="normalWatches()">
+                      WATCHES
+                     </a>
+                  </li>
+               </div>
+               <div class="list16" id="navJewellery">
+                  <li class="nav-item">
+                     <a class="nav-link active" id="set9" aria-current="page" href="#"
+                      style=" font-family: sans-serif; font-size: 13px;" id="jewellery" onmouseover="jewelleryHover()" onmouseleave="normalJewellery()" >
+                      JEWELLERY</a>
+                  </li>
+               </div>
+               <div class="list16" id="navShoes">
+                  <li class="nav-item">
+                     <a class="nav-link active" id="set9" aria-current="page" href="#"
+                      style=" font-family: sans-serif; font-size: 13px;" id="shoes" onmouseover="shoesHover()" onmouseleave="normalShoes()" >
+                      SHOES</a>
+                  </li>
+               </div>    
+               <div class="list16" id="navkids">
+                  <li class="nav-item">
+                     <a class="nav-link active" id="set9" aria-current="page" href="#"
+                      style=" font-family: sans-serif; font-size: 13px;" id="kids" onmouseover="kidsHover()" onmouseleave="normalkids()" >
+                      KIDS & GIRLS</a>
+                  </li>
+               </div>
+               <div class="list16" id="navPages">
+                  <li class="nav-item">
+                     <a class="nav-link active" id="set9" aria-current="page" href="#"
+                      style=" font-family: sans-serif; font-size: 13px;" id="Pages" onmouseover="pagesHover()" onmouseleave="normalPages()">
+                      PAGES</a>
+                  </li>
+               </div> 
+               <div class="list17">
+                  <li class="nav-item">
+                     <a class="nav-link active text-warning" id="set9" aria-current="page" href="#"
+                      style=" font-family: sans-serif; font-size: 13px;">TODAY'S OFFER </a>
+                  </li>
+               </div>            
+            </ul>
+         </div>
+      </nav>
+      <!-- <div class="container-md">
+         
+      <nav class="navbar bg-body-tertiary ">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">Offcanvas navbar</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+             <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+             </div>
+             <div class="offcanvas-body">
+               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="#">Home</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Link</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Dropdown
+                   </a>
+                   <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#">Action</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li>
+                       <hr class="dropdown-divider">
+                     </li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                   </ul>
+                 </li>
+               </ul>
+               <form class="d-flex mt-3" role="search">
+                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-outline-success" type="submit">Search</button>
+               </form>
+             </div>
+           </div>
+         </div>
+       </nav>
+      </div> -->
+   </div>
+   </div>
+   
+   <!-- ======================================================= HEADER  END =============================================================== -->
+
+   <!-- ======================================================= FIRST SECTION ============================================================= -->
+   <div class="container-md">
+      <p class="main-link"><a href="index.html" class="first-link">Home </a>/ Handbags</p>
+   </div>
+   <div class="container-md d-sm-flex" id="seft2">
+      <div class="categories2">
+         <div class="categories3">
+            <div class="d-flex">
+               <div class="icon5"><img src="icons/categories_icon.JPG" class="cate_icon" alt=""></div>
+               <div class="categories4"><h2 class="cate"> <b>CATEGORIES</b></h2></div>
+            </div>
+         </div>
+         <div class="btn-group dropend" >
+            <div class="bag_icon"><img src="icons/bag_icon.JPG" alt=""></div>
+            <button type="but" class="" id="cloths">
+              Clothing
+            </button>
+            <button type="button" class=" dropdown-toggle dropdown-toggle-split" id="drop" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropend</span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Dropdown menu links -->
+              <div class="d-sm-flex" id="dropcont2" >
+               <div>
+                  <ul class="drop_list2">
+                     <li><a href="#">Dresses</a></li>
+                     <li><a href="#">Shoes</a></li>
+                     <li><a href="#">Jackets</a></li>
+                     <li><a href="#">Sunglasses</a></li>
+                     <li><a href="#">Sportwears </a></li>
+                     <li><a href="#">Blazers</a></li>
+                     <li><a href="#">Shorts</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul class="drop_list2">
+                     <li><a href="#">Handbags</a></li>
+                     <li><a href="#">Jewellery</a></li>
+                     <li><a href="#">Swimwear</a></li>
+                     <li><a href="#">Tops</a></li>
+                     <li><a href="#">Flats</a></li>
+                     <li><a href="#">Shoes</a></li>
+                     <li><a href="#">Winter Wear</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul class="drop_list2">
+                     <li><a href="#">Toys & Games</a></li>
+                     <li><a href="#">Jeans</a></li>
+                     <li><a href="#">Shorts</a></li>
+                     <li><a href="#">Shoes</a></li>
+                     <li><a href="#">School Bags</a></li>
+                     <li><a href="#">Foot wear</a></li>
+                     <li><a href="#">Lunch bags</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <ul class="drop_list2">
+                     <li><a href="#">Sandals</a></li>
+                     <li><a href="#">Shorts</a></li>
+                     <li><a href="#">Dresses</a></li>
+                     <li><a href="#">Jewellery</a></li>
+                     <li><a href="#">Bags</a></li>
+                     <li><a href="#"> Swim wear</a></li>
+                     <li><a href="#">Night dress</a></li>
+                  </ul>
+               </div>
+            </div>
+            
+         </div>
+         <hr class="line34">
+
+         <div class="btn-group dropend" id="clothes">
+            <div class="bag_icon"><img src="icons/electronics_icon.JPG" alt=""></div>
+            <button type="but" class="" id="cloths">
+              Electronics
+            </button>
+            <button type="button" class=" dropdown-toggle dropdown-toggle-split" id="drop1" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropend</span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Dropdown menu links -->
+              <div class="d-sm-flex" id="dropcont7" >
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Dell</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Microsoft </a></li>
+                        <li><a href="#">Asus</a></li>
+                        <li><a href="#">Adapters</a></li>
+                        <li><a href="#">Batteries</a></li>
+                        <li><a href="#">Cooing Pads</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Routers & modems</a></li>
+                        <li><a href="#">CPUs, Processors</a></li>
+                        <li><a href="#">PC Gaming store</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">Webcam</a></li>
+                        <li><a href="#">Memory (RAM)</a></li>
+                        <li><a href="#">Motherboards</a></li>
+                        <li><a href="#">Keyboards</a></li>
+                        <li><a href="#">Haedphones</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Binculars</a></li>
+                        <li><a href="#">Telescopes</a></li>
+                        <li><a href="#">Camcorders</a></li>
+                        <li><a href="#">Digital</a></li>
+                        <li><a href="#">Film Cameras</a></li>
+                        <li><a href="#">Flashes</a></li>
+                        <li><a href="#">Surveilance</a></li>
+                        <li><a href="#">Tripods</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Motorola</a></li>
+                        <li><a href="#">LeEco</a></li>
+                        <li><a href="#"> Asus</a></li>
+                        <li><a href="#">Acer</a></li>
+                        <li><a href="#">Tecno</a></li>
+                        <li><a href="#">Infinix</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </ul>
+         </div>
+         <hr class="line34">
+
+         <div class="btn-group dropend">
+            <div class="bag_icon"><img src="icons/shoes_icon.JPG" alt=""></div>
+            <button type="but" class="" id="cloths">
+                 Shoes
+            </button>
+            <button type="button" class=" dropdown-toggle dropdown-toggle-split" id="drop3" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropend</span>
+            </button>
+            <ul class="dropdown-menu">
+               <!-- Dropdown menu links -->
+               <div class="d-sm-flex" id="dropcont2" >
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Jackets</a></li>
+                        <li><a href="#">Sunglasses</a></li>
+                        <li><a href="#">Sportwears </a></li>
+                        <li><a href="#">Blazers</a></li>
+                        <li><a href="#">Shorts</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Handbags</a></li>
+                        <li><a href="#">Jewellery</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Flats</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Winter Wear</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Toys & Games</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">School Bags</a></li>
+                        <li><a href="#">Foot wear</a></li>
+                        <li><a href="#">Lunch bags</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Sandals</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Jewellery</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#"> Swim wear</a></li>
+                        <li><a href="#">Night dress</a></li>
+                     </ul>
+                  </div>
+               </div>
+               
+            </ul>
+            
+         </div>
+         <hr class="line34">
+
+
+         <div class="btn-group dropend" id="clothes">
+            <div class="bag_icon"><img src="icons/watch_icon.JPG" alt=""></div>
+            <button type="but"  id="cloths">
+               Watches
+            </button>
+            <button type="button" class=" dropdown-toggle dropdown-toggle-split" id="drop4" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropend</span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Dropdown menu links -->
+              <div class="d-sm-flex" id="dropcont7" >
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Dell</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Microsoft </a></li>
+                        <li><a href="#">Asus</a></li>
+                        <li><a href="#">Adapters</a></li>
+                        <li><a href="#">Batteries</a></li>
+                        <li><a href="#">Cooing Pads</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Routers & modems</a></li>
+                        <li><a href="#">CPUs, Processors</a></li>
+                        <li><a href="#">PC Gaming store</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">Webcam</a></li>
+                        <li><a href="#">Memory (RAM)</a></li>
+                        <li><a href="#">Motherboards</a></li>
+                        <li><a href="#">Keyboards</a></li>
+                        <li><a href="#">Haedphones</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Binculars</a></li>
+                        <li><a href="#">Telescopes</a></li>
+                        <li><a href="#">Camcorders</a></li>
+                        <li><a href="#">Digital</a></li>
+                        <li><a href="#">Film Cameras</a></li>
+                        <li><a href="#">Flashes</a></li>
+                        <li><a href="#">Surveilance</a></li>
+                        <li><a href="#">Tripods</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Motorola</a></li>
+                        <li><a href="#">LeEco</a></li>
+                        <li><a href="#"> Asus</a></li>
+                        <li><a href="#">Acer</a></li>
+                        <li><a href="#">Tecno</a></li>
+                        <li><a href="#">Infinix</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </ul>             
+         </div>   
+         <hr class="line34">     
+         
+         <div class="btn-group dropend">
+            <div class="bag_icon"><img src="icons/jewellery_icon.JPG" alt=""></div>
+            <button type="but" class="" id="cloths">
+                 Jewellery
+            </button>
+            <button type="button" class=" dropdown-toggle dropdown-toggle-split" id="drop" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropend</span>
+            </button>
+            <ul class="dropdown-menu">
+               <!-- Dropdown menu links -->
+               <div class="d-sm-flex" id="dropcont2" >
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Jackets</a></li>
+                        <li><a href="#">Sunglasses</a></li>
+                        <li><a href="#">Sportwears </a></li>
+                        <li><a href="#">Blazers</a></li>
+                        <li><a href="#">Shorts</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Handbags</a></li>
+                        <li><a href="#">Jewellery</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Flats</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Winter Wear</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Toys & Games</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">School Bags</a></li>
+                        <li><a href="#">Foot wear</a></li>
+                        <li><a href="#">Lunch bags</a></li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="drop_list2">
+                        <li><a href="#">Sandals</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Jewellery</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#"> Swim wear</a></li>
+                        <li><a href="#">Night dress</a></li>
+                     </ul>
+                  </div>
+               </div>
+               
+            </ul>
+            
+         </div>
+         <hr class="line34">
+         
+         <div class="btn-group dropend">
+            <div class="bag_icon"><img src="icons/shoes_icon.JPG" alt=""></div>
+            <button type="but" class="" id="cloths">
+                 Health
+            </button>
+            <button type="button" class=" dropdown-toggle dropdown-toggle-split" id="drop5" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropend</span>
+            </button>           
+         </div>
+         <hr class="line34">
+
+         <div class="btn-group dropend">
+            <div class="bag_icon"><img src="icons/kids_icon.JPG" alt=""></div>
+            <button type="but" class="" id="cloths">
+                 Kids
+            </button>
+            <div class="drop2">
+               <button type="button" class=" dropdown-toggle dropdown-toggle-split" id="drop6" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropend</span>
+              </button>
+            </div>           
+         </div>
+         <hr class="line34">
+
+         <div class="btn-group dropend" id="sft">
+            <div class="bag_icon"><img src="icons/sports_icon.JPG" alt=""></div>
+            <button type="but" class="" id="cloths">
+                 Sports
+            </button>
+            <button type="button" class=" dropdown-toggle dropdown-toggle-s                                                                                                         plit" id="drop3" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropend</span>
+            </button>           
+         </div>
+         <hr class="line34">
+      </div>
+      <div class="slider1">
+         <img class="img-fluid" src="images/banners/cat-banner-1.jpg" alt="">
+         <div class="slider1-texts">
+            <h1 class="slider1-text1">BIG SALE</h1>
+             <p class="slider1-text2">Save up to 49% off</p>
+            <p class="slider1-text3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="container-md d-sm-flex" id="shop_section" >
+      <div>
+         <div class="second_carousel">
+            <div class="container-sm">
+               <h3 class="deals"> <b>SHOP BY</b> </h3>
+               <hr>
+               <h3 class="deals"> <b>Categories</b> </h3>
+               <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="accordion-one" class="accordion1">
+                      <button class="accordion-button collapsed" style="font-size: 13px; color: #4d4d4d; font-family: sans-serif;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" >
+                        Camera
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ol>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Samsung</b></a></li>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Apple</b></a></li>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Gem</b></a></li>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Specular</b></a></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" style="font-size: 13px; color: #4d4d4d; font-family: sans-serif;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Desktops
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ol>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Hewlett Packed</b></a></li>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Dell</b></a></li>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Lenovo</b></a></li>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Compaq</b></a></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" style="font-size: 13px; color: #4d4d4d; font-family: sans-serif;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Phones
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ol>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Iphones</b></a></li>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Samsung</b></a></li>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Tecno</b></a></li>
+                           <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Redmii</b></a></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header">
+                       <button class="accordion-button collapsed" style="font-size: 13px; color: #4d4d4d; font-family: sans-serif;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                         Designers
+                       </button>
+                     </h2>
+                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                       <div class="accordion-body">
+                         <ol>
+                            <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Nike</b></a></li>
+                            <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Tommy Hilfiger</b></a></li>
+                            <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Louis vuiton</b></a></li>
+                            <li ><a href="#" style="font-size: 13px; color: #8a8989; font-family: sans-serif; text-decoration: none;"><b>> Burberry</b></a></li>
+                         </ol>
+                       </div>
+                     </div>
+                   </div>
+               </div>
+
+               <div class="price_slider">
+                  <label for="customRange1" class="form-label" id="form-label1"><b>Price Slider</b></label>
+                  <div class="d-flex">
+                     <p class="price_slider_value"><b>$200.00</b></p>
+                     <p class="price_slider_value" style=" margin-left: 100px;"><b>$800.00</b></p>
+                  </div>
+                  <input type="range" class="form-range" id="customRange1">
+                  <button class="btn btn-primary" id="range-btn">Show Now </button>
+               </div>
+               
+               <div class="shop-lists" class="container-sm">
+                  <ul>
+                     <h6 class="manufacturers"><b>Manufactures</b></h6>
+                     <li><a href="#" class="companies">Forever 18</a></li>
+                     <li><a href="#" class="companies">Nike</a></li>
+                     <li><a href="#" class="companies">Dolce & Gabbana</a></li>
+                     <li><a href="#" class="companies">Alluare</a></li>
+                     <li><a href="#" class="companies">Chanel</a></li>
+                     <li><a href="#" class="companies">Other Brand</a></li>
+
+                  </ul>
+                  <ul>
+                     <h6 class="manufacturers"><b>Colors</b></h6>
+                     <li><a href="#" class="companies">Red</a></li>
+                     <li><a href="#" class="companies">Blue</a></li>
+                     <li><a href="#" class="companies">Yellow</a></li>
+                     <li><a href="#" class="companies">Pink</a></li>
+                     <li><a href="#" class="companies">Brown</a></li>
+                     <li><a href="#" class="companies">Teal</a></li>
+
+                  </ul>
+               </div>
+               
+               </div>
+
+            </div>
+         </div>
+         <!-- *************** -->
+         <!-- <div class="fourth_carousel" class="second-set" >
+            <div class="container-sm">
+               <div class="heading7" >
+                  <div class="d-flex" onclick=""><div><img src="icons/grid.JPG" alt=""></div><div><p class="deals">Grid</p></div></div>
+                  <div class="d-flex" style="margin-left:5px ;" onclick=""><div><img src="icons/list.JPG" alt=""></div><div><p class="deals">List</p></div></div>
+                  <div class="carousel2-links">
+                     <ul class="d-flex">
+                        <li><a href="#" class="carousel2-link">All</a></li>
+                        <li><a href="#" class="carousel2-link">Clothing</a></li>
+                        <li><a href="#" class="carousel2-link">Eletronics</a></li>
+                        <li><a href="#" class="carousel2-link">Shoes</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <hr class="carousel2-line"> -->
+               <div class="fourth_carousel" class="second-set" >
+                  <div class="container-sm">
+                     <div class="heading7" >
+                       <div class="mx-auto d-flex">
+                        <div class="d-flex" onclick="changeListToGrid()"><div><img src="icons/grid.JPG" alt=""></div><div><p class="deals">Grid</p></div></div>
+                        <div class="d-flex" style="margin-left:5px;" onclick="changeGridToList()"><div><img src="icons/list.JPG" alt=""></div><div><p class="deals">List</p></div></div>
+                       </div>
+                        <div class="d-flex mx-auto" id="sort_container">
+                           <div><p class="sort">Sort by</p></div>
+                           <div style="margin-top: -2px;">
+                              <select class="selectOne" >
+                                 <option value="Choice 1" >Position </option>
+                                 <option value="Choice 1">Price:Lowest first</option>
+                                 <option value="Choice 2">Price:Highest first</option>
+                                 <option value="Choice 3">Product name: A to z</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="d-flex mx-auto" id="sort_container">
+                           <div><p class="sort">Show</p></div>
+                           <div>
+                              <select class="selectOne" >
+                                 <option value="Choice 1">1 </option>
+                                 <option value="Choice 1">2 </option>
+                                 <option value="Choice 2">3 </option>
+                                 <option value="Choice 3">4 </option>
+                                 <option value="Choice 3">5 </option>
+                                 <option value="Choice 3">6 </option>
+                                 <option value="Choice 3">7 </option>
+                               </select>
+                           </div>
+                        </div>
+                        <div class="mx-auto d-flex">
+                           <p class="headNum">1 </p>
+                           <p class="headNum"> < 2</p>
+                           <p class="headNum">< 3</p>
+                           <p class="headNum"> < 4</p>
+                        </div>
+                     </div>
+                     <hr class="headLine">
+               <div>
+                  
+               <div class="container overflow-hidden text-center" id="grid_container">
+                  <div class="row gx-5">
+                    <div class="col">
+                     <div class="p-3" id="carousel2-pic">
+                        <img src="images/products/p4.jpg" class="img-fluid"  alt="">
+                        <div class="carousel2-texts">
+                           <a href="#" class="floral1">Floral Print Buttoned</a>
+                           <div class="d-flex">
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           </div>
+                           <p class="floral_amount"><b>$450.00</b> <span class="floral2">$500.00</span></p>
+                        </div>
+                    
+                     </div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3" id="carousel2-pic">
+                        <img src="images/products/p3.jpg" class="img-fluid" alt="">
+                        <div class="carousel2-texts">
+                           <a href="#" class="floral1">Floral Print Buttoned</a>
+                           <div class="d-flex">
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           </div>
+                           <p class="floral_amount"><b>$450.00</b> <span class="floral2">$500.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                     <div class="p-3" id="carousel2-pic">
+                        <img src="images/products/p7.jpg" class="img-fluid" alt="">
+                        <div class="carousel2-texts">
+                           <a href="#" class="floral1">Floral Print Buttoned</a>
+                           <div class="d-flex">
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           </div>
+                           <p class="floral_amount"><b>$450.00</b> <span class="floral2">$500.00</span></p>
+                        </div>
+                     </div>
+                   </div>
+                   <div class="col">
+                     <div class="p-3" id="carousel2-pic">
+                        <img src="images/products/p10.jpg" class="img-fluid" alt="">
+                        <div class="carousel2-texts">
+                           <a href="#" class="floral1">Floral Print Buttoned</a>
+                           <div class="d-flex">
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           </div>
+                           <p class="floral_amount"><b>$450.00</b> <span class="floral2">$500.00</span></p>
+                        </div>
+                     </div>
+                   </div>
+
+                   <div class="col">
+                     <div class="p-3" id="carousel2-pic">
+                        <img src="images/products/p12.jpg" class="img-fluid" alt="">
+                        <div class="carousel2-texts">
+                           <a href="#" class="floral1">Floral Print Buttoned</a>
+                           <div class="d-flex">
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           </div>
+                           <p class="floral_amount"><b>$450.00</b> <span class="floral2">$500.00</span></p>
+                        </div>
+                     </div>
+                   </div>
+                   <div class="col">
+                     <div class="p-3" id="carousel2-pic">
+                        <img src="images/products/p14.jpg" class="img-fluid" alt="">
+                        <div class="carousel2-texts">
+                           <a href="#" class="floral1">Floral Print Buttoned</a>
+                           <div class="d-flex">
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           </div>
+                           <p class="floral_amount"><b>$450.00</b> <span class="floral2">$500.00</span></p>
+                        </div>
+                     </div>
+                   </div>
+                   <div class="col">
+                     <div class="p-3" id="carousel2-pic">
+                        <img src="images/products/p15.jpg" class="img-fluid" alt="">
+                        <div class="carousel2-texts">
+                           <a href="#" class="floral1">Floral Print Buttoned</a>
+                           <div class="d-flex">
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           </div>
+                           <p class="floral_amount"><b>$450.00</b> <span class="floral2">$500.00</span></p>
+                        </div>
+                     </div>
+                   </div>
+                   <div class="col">
+                     <div class="p-3" id="carousel2-pic">
+                        <img src="images/products/p13.jpg" class="img-fluid" alt="">
+                        <div class="carousel2-texts">
+                           <a href="#" class="floral1">Floral Print Buttoned</a>
+                           <div class="d-flex">
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-on.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           <div><img src="images/star-off.png" alt=""></div>
+                           </div>
+                           <p class="floral_amount"><b>$450.00</b> <span class="floral2">$500.00</span></p>
+                        </div>
+                     </div>
+                   </div>
+                   
+                  </div>
+               </div>
+               </div>
+               <div>
+                  <div id="list_container" style="display: none;">
+                     <img src="images2/list1 .img" alt="">
+                     <img style="margin-left: 18px;" src="images2/list2..JPG" alt="">
+                     <img style="margin-left: 18px;" src="images2/list3.JPG" alt="">
+                     <img src="images2/list5.JPG" alt="">
+                  </div>
+               </div>
+            </div>
+               
+      </div>
+   </div>
+
+      <div class="container-md d-sm-flex" id="compare_section" >
+         <div>
+            <div class="second_carousel">
+               <div class="container-sm">
+                <h3 class="deals"> <b>COMPARE PRODUCTS</b> </h3>
+                <hr>
+                <p class="compare-text">You have no <span class="item" >item(s)</span> to compare</p>
+               </div>
+            </div>
+         </div>
+
+         
+      </div>
+
+      <div class="container-md d-flex" id="fifth-section" >
+         <div class="second_carousel">
+           <div class="container-sm">
+            <h3 class="deals"> <b>PRODUCTS TAGS</b> </h3>
+            <hr>
+            <div class="d-flex" id="product-boxes-container">
+               <div class="product-boxes" id="productBoxes5" onmouseenter="addHoverFive()" onmouseleave="removeHoverFive()">
+                  <p><a href="Product tags.html" class="product-box-text" id="productBoxText5" >Phone</a></p>
+               </div>
+               <div class="product-boxes1">
+                  <p><a href="Product tags.html" class="product-box-text1">Vest</a></p>
+               </div>
+               <div class="product-boxes" id="productBoxes4" onmouseenter="addHoverFour()" onmouseleave="removeHoverFour()" >
+                  <p><a href="Product tags.html" class="product-box-text" id="productBoxText4">Smartphone</a></p>
+               </div>
+            </div>
+            
+            <div class="d-flex" id="product-boxes-container">
+               <div class="product-boxes" id="productBoxes3" onmouseenter="addHoverThree()" onmouseleave="removeHoverThree()">
+                  <p><a href="Product tags.html" class="product-box-text" id="productBoxText3">Furniture</a></p>
+               </div>
+               <div class="product-boxes"id="productBoxes2" onmouseenter="addHoverTwo()" onmouseleave="removeHoverTwo()">
+                  <p ><a href="Product tags.html" class="product-box-text" id="productBoxText2">T-shirt</a></p>
+               </div>
+            </div>
+            <div class="d-flex" id="product-boxes-container">
+               <div class="product-boxes"id="productBoxes1" onmouseenter="addHoverOne()" onmouseleave="removeHoverOne()">
+                  <p ><a href="Product tags.html" class="product-box-text" id="productBoxText1">Sweatpants</a></p>
+               </div>
+               <div class="product-boxes" id="productBoxes" onmouseenter="addHover()" onmouseleave="removeHover()">
+                  <p><a href="#" class="product-box-text" id="productBoxText">Sneakers</a></p>
+               </div>
+            </div>
+            
+         </div>
+         </div>
+      </div>
+
+      <div class="container-md d-sm-flex" id="sixth-section" >
+         <div>
+            <div class="second_carousel">
+             <!-- ************************************************ -->
+             <div class="fifth_carousel">
+               <div class="container-sm container-fluid">
+                  <div class="member1">
+                     <img src="images/testimonials/member1.png" class="img-fluid" id="testimonial1" alt="...">
+                  </div>
+                <p class="sixth-section-text2" id="box_text_one">My experience with the Flipmart company has been very amazing, and still plan on using the app for the purchase for my groceries </p>
+                <p class="sixth-section-text3" id="box_text_two"><B>Kane Voss</B></p>
+                <p class="sixth-section-text4" id="box_text_three">Fet Company</p>
+                <div class="d-flex justify-content-center" id="sixth-boxes">
+                  <div class="sixth-section-boxes1" id="boxone" onclick="firstImage()"></div>
+                  <div class="sixth-section-boxes" id="boxtwo" onclick="secondImage()"></div>
+                  <div class="sixth-section-boxes" id="boxthree" onclick="thirdImage()"></div>
+                </div>
+   
+               </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="fourth_carousel" class="second-set"  >
+            <div class="container-sm">
+               <div class="heading7" >
+                 <div class="mx-auto d-flex">
+                  <div class="d-flex" onclick="changeListToGrid()"><div><img src="icons/grid.JPG" alt=""></div><div><p class="deals">Grid</p></div></div>
+                  <div class="d-flex" style="margin-left:5px;" onclick="changeGridToList()"><div><img src="icons/list.JPG" alt=""></div><div><p class="deals">List</p></div></div>
+                 </div>
+                  <div class="d-flex mx-auto" id="sort_container">
+                     <div><p class="sort">Sort by</p></div>
+                     <div style="margin-top: -2px;">
+                        <select class="selectOne" >
+                           <option value="Choice 1" >Position </option>
+                           <option value="Choice 1">Price:Lowest first</option>
+                           <option value="Choice 2">Price:Highest first</option>
+                           <option value="Choice 3">Product name: A to z</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="d-flex mx-auto" id="sort_container">
+                     <div><p class="sort">Show</p></div>
+                     <div>
+                        <select class="selectOne" >
+                           <option value="Choice 1">1 </option>
+                           <option value="Choice 1">2 </option>
+                           <option value="Choice 2">3 </option>
+                           <option value="Choice 3">4 </option>
+                           <option value="Choice 3">5 </option>
+                           <option value="Choice 3">6 </option>
+                           <option value="Choice 3">7 </option>
+                         </select>
+                     </div>
+                  </div>
+                  <div class="mx-auto d-flex">
+                     <p class="headNum">1 </p>
+                     <p class="headNum"> < 2</p>
+                     <p class="headNum">< 3</p>
+                     <p class="headNum"> < 4</p>
+                  </div>
+               </div>
+               <hr class="headLine">
+         
+         <div>
+            <div id="list_container" >
+               <img src="images2/list1 .img" alt="">
+               <!-- <img style="margin-left: 18px;" src="images2/list2..JPG" alt=""> -->
+               <!-- <img style="margin-left: 18px;" src="images2/list3.JPG" alt=""> -->
+
+            </div>
+         </div>
+      </div>
+         
+</div>
+      </div>
+      <div class=" container-md d-flex" id="seventh-section">
+         <div class="container-fluid" id="temidayo">
+            <img src="images/banners/LHS-banner.jpg" class="flipmart-app" alt="">
+         </div>
+      </div>
+      <div class="container-md">
+         <div class="d-flex" id="brands">
+            <div><a href="index.html"><img src="images/brands/brand1.png" class="brand1" alt=""></a></div>
+            <div><a href="index.html"><img src="images/brands/brand2.png" class="brand1"  alt=""></a></div>
+            <div><a href="index.html"><img src="images/brands/brand3.png" class="brand1"  alt=""></a></div>
+            <div><a href="index.html"><img src="images/brands/brand4.png" class="brand1"  alt=""></a></div>
+            <div><a href="index.html"><img src="images/brands/brand5.png" class="brand1"  alt=""></a></div>
+            <div><a href="index.html"><img src="images/brands/brand6.png" class="brand1"  alt=""></a></div>
+            <div><a href="index.html"><img src="images/brands/brand4.png" alt=""></a></div>
+         </div>
+      </div>
+
+         <!--=========================================================== FOOTER ==================================================================-->
+   <footer>
+      <div class="container-md" >
+        <div class="d-sm-flex" class="footer-content-container">
+         <div>
+            <div id="footer-content">
+               <h6 class="footer-contact mx-2"><b>CONTACT US</b></h6>
+               <div class="d-flex" id="footer-contact-container1">
+                  <div><img src="icons/location-icon.JPG" alt=""></div>
+                  <div><p class="footer-text1">Boldlinks training hub, 9 General  <br>bus stop, Ijaiye Ojokoro, Lagos</p></div>
+               </div>
+            </div>
+            <div id="footer-content">
+               <div class="d-flex" id="footer-contact-container2">
+                  <div><img src="icons/telephone-icon.JPG" alt=""></div>
+                  <div><p class="footer-text1">(+234) 91-221-40041 <br> (+234) 90-267-33523</p></div>
+               </div>
+            </div>
+            <div id="footer-content">
+               <div class="d-flex" id="footer-contact-container2">
+                  <div><img src="icons/messagine-icon.JPG" alt=""></div>
+                  <div><p class="footer-text2">falolatemidayo@gmail.com</div>
+               </div>
+            </div>
+           </div>
+           <!-- ************************************************ -->
+           <div class="mx-auto">
+              <div id="footer-content">
+                  <h6 class="footer-contact1 mx-2"><b>CUSTOMER SERVICE</b></h6>
+                  <ul class="footer-list">
+                     <li><a href="#" class="footer-text3">My Account</a></li>
+                     <li><a href="#" class="footer-text3">Order history</a></li>
+                     <li><a href="#" class="footer-text3">FAQ</a></li>
+                     <li><a href="#" class="footer-text3">Specials</a></li>
+                     <li><a href="#" class="footer-text3">Help center </a></li>
+                  </ul>
+               </div>
+           </div>
+           <!-- ************************************************ -->
+           <div class="mx-auto">
+            <div id="footer-content">
+               <h6 class="footer-contact1 mx-2" ><b>CORPORATION</b></h6>
+               <ul class="footer-list">
+                  <li><a href="#" class="footer-text3">About us</a></li>
+                  <li><a href="#" class="footer-text3">Customer service</a></li>
+                  <li><a href="#" class="footer-text3">Company</a></li>
+                  <li><a href="#" class="footer-text3">Investor relations</a></li>
+                  <li><a href="#" class="footer-text3">Advanced search </a></li>
+               </ul>
+            </div>
+           </div>
+           <!-- ************************************************ -->
+           <div class="mx-auto">
+            <div id="footer-content4">
+               <h6 class="footer-contact1 mx-2" ><b>WHY CHOOSE US </b></h6>
+               <ul class="footer-list">
+                  <li><a href="#" class="footer-text3">Shopping guide </a></li>
+                  <li><a href="#" class="footer-text3">Blog</a></li>
+                  <li><a href="#" class="footer-text3">Company</a></li>
+                  <li><a href="#" class="footer-text3">Investor relations</a></li>
+                  <li><a href="#" class="footer-text3">Contact us </a></li>
+               </ul>
+            </div>
+           </div>
+        </div>
+      </div>
+
+
+      <div class="second-footer">
+         <div class="container-md d-sm-flex">
+            <div class="d-flex mx-auto" >
+               <a href="https://facebook.com"><img src="icons/facebook-icon.JPG" alt=""></a>
+               <a href="https://twitter.com"><img src= "icons/x-icon.JPG" alt="" style="margin-top: 2.5px;"></a>
+               <a href="https://google.com"><img src=  "icons/google-icon.JPG" alt="" style="margin-top: 0.5px;"></a>
+               <a href="https://linkedin.com"><img src= "icons/linkedin-icon.JPG" alt="" style="margin-top: -1.5px;"></a>
+               <a href="https://youtube.com"><img src= "icons/youtube-icon.JPG" alt=""></a>
+               <a href="https://youtube.com"><img src= "icons/other-icons.JPG" style="margin-top: 1.5px;" alt=""></a>
+                
+
+            </div>
+            <div class="d-flex" id="payment_options" >
+               <img src="images/payments/1.png" class="payments" alt="">
+               <img src="images/payments/2.png" class="payments" alt="">
+               <img src="images/payments/3.png" class="payments" alt="">
+               <img src="images/payments/4.png" class="payments" alt="">
+               <img src="images/payments/5.png" class="payments" alt="">
+            </div>
+         </div>
+         
+      </div>
+   </footer>
+
+   <!--=========================================================== FOOTER END =================================================================-->
+
+
+     <!-- JAVASCRIPT LINKS -->
+     <script src="bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="javascript.js"></script>
+    
+ </body>
+ </html>
